@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<title>
+		Mileage Converter
+	</title>
+	
+	<body>
+	
+		<h1>Mileage Converter</h1>
+		<h2>By Tiffany Nguyen, Brian Lee, and Jessica Say</h2>
+			
+		<p>Press 'Start' to begin.</p>
+			
+		<form>
+			<input type="button" onclick="convert();" value="Start">
+		</form>
+		
+	</body>
+
+	<script type="text/javascript">
+
+		function convert()
+		{
+			var returnKpl =0;
+			var usersMpg = prompt("Enter Your Miles per Gallon to be Converted!", 0); 
+
+			returnKpl = usersMpg * 1.61 * 0.264;
+
+			alert( usersMpg + " miles per gallon are equal to " + returnKpl + " kilometers per liter.");
+		}
+
+	</script>
+	
+</html>
